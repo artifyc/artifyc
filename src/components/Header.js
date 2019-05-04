@@ -75,13 +75,8 @@ class Header extends React.Component {
     return (
       <nav className="navbar navbar-light">
         <div className="container">
-          <img src={require("../assets/logo")} className="nav-logo" alt="" />
-          <Link to="/" className="navbar-brand">
-            {require("../assets/logo")}
-          </Link>
-
+          <a href="/"> <img src={require("../assets/logo")} className="nav-logo" alt="" /></a>
           <LoggedOutView currentUser={this.props.currentUser} />
-
           <LoggedInView currentUser={this.props.currentUser} />
         </div>
       </nav>
